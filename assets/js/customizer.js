@@ -143,6 +143,23 @@
 		});
 	});
 
+	// Warning Color.
+	wp.customize( 'woocommerce_colors[warning]', function( value ) {
+		value.bind( function( warning ) {
+			var css         = '',
+
+			// Product page.
+			css += '.woocommerce div.product span.price .discontinued, .woocommerce div.product p.price .discontinued { color: ' + warning + '; }';
+			css += '.woocommerce div.product .stock.out-of-stock { color: ' + warning + '; }';
+
+			// Products loop.
+			css += '.woocommerce ul.products li.product .price .discontinued { color: ' + warning + '; }';
+			
+			$( '#woocommerce-colors-warning' ).remove();
+			$( 'head' ).append( '<style id="woocommerce-colors-warning">' + css + '</style>' );
+		});
+	});
+
 	// Content Background Color.
 	wp.customize( 'woocommerce_colors[contentbg]', function( value ) {
 		value.bind( function( contentbg ) {

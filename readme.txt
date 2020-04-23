@@ -1,9 +1,9 @@
 === WooCommerce Colors ===
-Contributors: woothemes, claudiosanches
+Contributors: woothemes, claudiosanches, d-skinner
 Tags: woocommerce, shortcodes
 Requires at least: 4.0
 Tested up to: 4.9
-Stable tag: 1.0.7
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -59,6 +59,10 @@ You can find the customizer menu within your WordPress admin in Appearance secti
 
 == Changelog ==
 
+= 1.1.0 - 2020/4/23 =
+
+* Added a new "warning" color (for "Out of stock" items and Discontinued Products)
+
 = 1.0.7 - 2017/10/18 =
 
 * Updated version, tested with WordPress 4.9 and WooCommerce 3.2.
@@ -98,4 +102,3 @@ You can find the customizer menu within your WordPress admin in Appearance secti
 = 1.0.7 =
 
  Updated version, tested with WordPress 4.9 and WooCommerce 3.2.
-

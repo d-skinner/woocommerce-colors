@@ -87,6 +87,21 @@ class WC_Colors_Customizer {
 			'priority' => 1
 		) ) );
 
+		// Warning Color.
+		$wp_customize->add_setting( $this->section_slug . '[warning]', array(
+			'default'           => '#00ffff',
+			'type'              => 'option',
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'sanitize_hex_color',
+		) );
+
+		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'woocommerce_warning', array(
+			'label'    => sprintf( __( 'Warning Color %s', 'woocommerce-colors' ), '<small>(' . __( 'Discontinued and Out of stock items', 'woocommerce-colors' ) . ')</small>' ),
+			'section'  => $this->section_slug,
+			'settings' => $this->section_slug . '[warning]',
+			'priority' => 1
+		) ) );
+
 		// Content Background Color.
 		$wp_customize->add_setting( $this->section_slug . '[contentbg]', array(
 			'default'           => '#ffffff',

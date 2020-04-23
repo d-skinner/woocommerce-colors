@@ -11,6 +11,7 @@ $secondary:     <?php echo $colors['secondary']; ?>;
 $secondarytext: <?php echo wc_light_or_dark( $colors['secondary'], 'desaturate(darken($secondary,60%),18%)', 'desaturate(lighten($secondary,60%),18%)' ); ?>;
 $highlight:     <?php echo $colors['highlight']; ?>;
 $highlightext:  <?php echo wc_light_or_dark( $colors['highlight'], 'desaturate(darken($highlight,60%),18%)', 'desaturate(lighten($highlight,60%),18%)' ) ?>;
+$warning:				<?php echo $colors['warning']; ?>;
 $contentbg:     <?php echo $colors['content_bg']; ?>;
 $subtext:       <?php echo $colors['subtext']; ?>;
 

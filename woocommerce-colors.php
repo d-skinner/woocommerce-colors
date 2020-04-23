@@ -5,7 +5,7 @@
  * Description: WooCommerce Colors.
  * Author: WooThemes
  * Author URI: https://woocommerce.com
- * Version: 1.0.7
+ * Version: 1.1.0
  * License: GPLv2 or later
  * Text Domain: woocommerce-colors
  * Domain Path: languages/
@@ -27,7 +27,7 @@ class WC_Colors {
 	 *
 	 * @var string
 	 */
-	const VERSION = '1.0.7';
+	const VERSION = '1.1.0';
 
 	/**
 	 * Instance of this class.
@@ -110,6 +110,9 @@ class WC_Colors {
 		}
 		if ( empty( $colors['highlight'] ) ) {
 			$colors['highlight'] = '#77a464';
+		}
+		if ( empty( $colors['warning'] ) ) {
+			$colors['warning'] = '#00ffff';
 		}
 		if ( empty( $colors['content_bg'] ) ) {
 			$colors['content_bg'] = '#ffffff';
